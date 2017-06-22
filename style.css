@@ -1,3 +1,77 @@
+.test-paragraph {
+	text-align: center;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffe;
+}
+
+.nav-bar { 
+	top: 0;  /*attaches to the top*/
+	width: 100%; /*100% of the element*/
+ 	padding: .5em 1em!important;
+ 	/*border: 1px solid red;*/
+ 	margin: .5em 0%;
+ 	display: inline-block;
+
+ 	color: red!important;
+ 	background-color:#fff!important;
+ 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+ 	
+ 	
+ 	/* need display to put it inline,
+ 	   need width to fill the whole page */
+ }
+
+ .nav-button {
+ 	padding: 8px 16px;
+ 	float: left;
+ 	width: auto; /*font auto*/
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	cursor: pointer;
+ 	/* the text will never wrap */
+ 	white-space: nowrap;
+ 	color: inherit;
+ 	background-color: inherit;
+ 	text-align: center;
+ }
+
+/*right nav bar elements get smaller */
+ .right-nav-bar {
+ 	float: right;
+ 	padding: 0 1em;
+ } 
+
+
+
+.drawing-box {
+	height: 30em;
+	width: 40%;
+	margin: auto;
+    border: 1px solid green;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10em 0;
+    /*padding: 10em 0;*/
+    /*padding: 25px;*/
+    /*margin: 25px;*/
+}
+
 #simulationTest {
 	color: red;
 }
+
+@media (max-width:600px) {
+	.mobile-size {display:none!important};
+}
+/* 
+
+height: 3em;
+	width: 3em;
+	border: red;
+	background-color: blue;
+
+	*/
