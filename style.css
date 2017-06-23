@@ -5,7 +5,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #ffe;
+	background-color: #fffffe;
 }
 
 .nav-bar { 
@@ -26,6 +26,7 @@ html, body {
  }
 
  .nav-button {
+ 	font-family: 'Space Mono', monospace;
  	padding: 8px 16px;
  	float: left;
  	width: auto; /*font auto*/
@@ -34,9 +35,15 @@ html, body {
  	cursor: pointer;
  	/* the text will never wrap */
  	white-space: nowrap;
- 	color: inherit;
+ 	color: black;
  	background-color: inherit;
  	text-align: center;
+ }
+
+ .right-nav-bar > a:link {
+ 	color: black;
+ 	text-decoration:none;
+
  }
 
 /*right nav bar elements get smaller */
@@ -62,11 +69,33 @@ html, body {
 
 #simulationTest {
 	color: red;
+
+}
+
+.img-container {
+	position: relative;
+	max-width: 980px;
+	margin: auto; /*centering*/
+	letter-spacing: 6px; /*use an animation here*/
+}
+
+#home-img {
+	max-width: 1500px;
+}
+
+.original-img {
+	max-width: 100%;
+	height: auto;
 }
 
 @media (max-width:600px) {
 	.mobile-size {display:none!important};
 }
+
+@media (min-width: 700px) {
+	#home-img {margin:auto};
+}
+
 /* 
 
 height: 3em;
