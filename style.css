@@ -40,9 +40,10 @@ html, body {
  	text-align: center;
  }
 
- .right-nav-bar > a:link {
+
+ .right-nav-bar > a:link, .right-nav-bar > a:visited, .nav-button > a:link, .nav-button > a:visited {
  	color: black;
- 	text-decoration:none;
+ 	text-decoration: none;
 
  }
 
