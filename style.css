@@ -1,11 +1,7 @@
-.test-paragraph {
-	text-align: center;
-}
-
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #fffffe;
+	background-color: #ffffff;
 }
 
 .nav-bar { 
@@ -81,7 +77,7 @@ html, body {
 }
 
 #home-img {
-	max-width: 1500px;
+	max-width: 1000px;
 }
 
 .original-img {
@@ -89,8 +85,18 @@ html, body {
 	height: auto;
 }
 
+.elevator-speech {
+	text-align: center;
+}
+
+.test-area {
+	text-align: center;
+}
+
 @media (max-width:600px) {
-	.mobile-size {display:none!important};
+	.mobile-size {
+		display:none!important
+	};
 }
 
 @media (min-width: 700px) {
