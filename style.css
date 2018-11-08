@@ -4,6 +4,7 @@ html, body {
 	background-color: #ffffff;
 }
 
+
 .nav-bar { 
 	top: 0;  /*attaches to the top*/
 	width: 100%; /*100% of the element*/
@@ -91,6 +92,18 @@ html, body {
 
 .test-area {
 	text-align: center;
+}
+
+body .projects {
+	margin-left: 0.67em;
+    margin-right: 0.67em;
+}
+
+.projects {
+	width: 100%;
+	text-rendering: geometricPrecision;
+
+
 }
 
 @media (max-width:600px) {
