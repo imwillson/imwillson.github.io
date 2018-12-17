@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="class="dt center">
 	<head>
-		<title>Willson's Page</title>
+		<title class="">Willson's Page</title>
 		<!-- <link rel="stylesheet" href="../../tachyons/tachyons/css/tachyons.css"/> -->
 		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!--jquery CDN goes in html-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,57 +18,93 @@
 	
 
 	<body>
-		<nav class="ppa3 pb0">
-			<a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Willson Li</a>
+		<!-- NAV BAR -->
+		<nav class="pa3 pb0">
+			<a class="link dim black b f-headline center tc db mb3 mb4-ns pt4" href="#" title="Home">Willson Li</a>
 			<div class="tc pb3">
 
 			    <a href="../index.html" class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Work</a>
 
 			    <a href="about.html" class="link dim gray f6 f5-ns dib mr3" href="#" title="About">About</a>
 
-			    <!-- <a href="work.html"  class="link dim gray f6 f5-ns dib mr3" href="#" title="Work">Work</a> -->
-
-			    <a href="contact.html" class="link dim gray f6 f5-ns dib" href="#" title="Contact">Contact</a>
+			    <a class="link dim gray f6 f5-ns dib" href="https://drive.google.com/open?id=0ByARvCMdzDeOSkpLU3JKbGtXQVk" title="Resume">Resume</a>
 			</div>
 		</nav>
 
-		<!-- <header class="img-container" id="home-img">
-			<img class="original-img" src=home-img alt="Photo by Ellie Pritts">
-		</header> -->
-
-		<!-- <div class="drawing-box">
-			this is where my picture goes
-		</div> -->
-
-		<div class="mw7 center"> 
-			<h1> Treasy page </h1>
-			<div class="project-img mw6"> 
+		<!-- Actual Body -->
+		<div class="w-100 w-50-ns center"> 
+			<h1 class="tc"> TravelEasy | <a href="https://github.com/imwillson/makeSchoolApp">github: imwillson/makeSchoolApp</a></h1>
+			<!-- <div class="project-img mw6"> 
 				<img src="https://nerdist.com/wp-content/uploads/2015/02/Dragon-Ball-z-970x545.jpg" alt="picture of project"> 
-			</div>
+			</div> -->
 
-			<div class="mw7">
-					<p>What was used? Swift. GoogleMaps Geometry Library, Google Maps API</p>
+			<!-- Big Div -->
+			<div class="w-100 w-75-ns center">
+				<!-- Idea -->
+				<div class="db pa2 nowrap-ns ma2 bt b--light-gray bn-ns">
+					<div class="db dib-ns v-mid-ns pt3 tc">
+						<img src="https://img.icons8.com/ios/100/000000/idea-sharing.png">
+					</div>
 
-					<p>This was a project I made by myself at a iOS Mobile App bootcamp called Make School. In our 8 week program, we were tasked to develop an application that sought to solve problems in our personal lives. As a transit enthusiast, I’ve always been interested in how friends from outer boroughs with cars (Brooklyn, Queens, Bronx, Staten Island) could pickup their friends efficiently. I always made my friends walk toward me as I was driving toward them, so I sought to create an application that efficiently did just this. So, instead of sitting in traffic and their standing idly, they could cut down time walking toward me while I was driving toward them.</p>
+					<div class="db center dib-ns v-mid-ns ws-normal-ns ph3">
+						<h3 class="ws-normal"> Built an iOS application to find an optimal point for a driver to pickup a pedestrian who willing to walk toward the driver </h3>
+						<p class="fw1">Used: Swift, GoogleMapsGeometry Library, GoogleMaps API</p>
+					</div>
+				</div>
+				
+				<!-- Context -->
+				<div class="db pa2 nowrap-ns ma2 bt b--light-gray bn-ns">
+					<div class="db dib-ns v-mid-ns pt3 tc">
+						<img class="" src="https://img.icons8.com/ios/100/000000/joomla.png">
+					</div>
 
-					<p>I sought to build the backend of the project first. There were so many functions and objects for me to consider when working with the Google Maps Api, my personal algorithm, and data parsing. Quickly, I realized that I needed to build multiple classes to support this project so that my code could be readable and concise.</p>
+					<div class="dib v-mid overflow-hidden ph3">
+						<h3>Context</h3>
+							<p class="fw1 ws-normal">As a driver in NYC who also aggressively walks a lot, I always found myself using that background to move myself to a closer point whenever I was getting picked up by my Dad by car or vice versa. I wanted to find a solution to optimize this niche problem, instead of eyeballing it on a map. It found the point based on the "midpoint of time". </p>
+							<p class="fw1">Made in a 8-week iOS Engineering Bootcamp called Make School. </p>
+					</div>
+				</div>
+				
+				<!-- Components -->
+				<div class="db pa2 nowrap-ns ma2 bt b--light-gray bn-ns">
+					<div class="db dib-ns v-mid-ns pt3 tc">
+						<img class="" src="https://img.icons8.com/ios/100/000000/settings.png">
+					</div>
+					
+					<div class="dib v-mid ph3 ws-normal">
+						<h3>Components</h3>
 
-					<p>It was my first time working with an API and that was challenging to work through documentation and to sort through the data afterward and put it in the JSON format that I wanted. Building the frontend of the application was very challenging as I had not thought much about the user experience when using the application while creating my sketches. </p>
+						<p class="fw1">One ApplicationView to support the front-end</p>
+						<p class="fw1">Google Maps API to find real-time information on distance/time between two points</p>
+						<p class="fw1">Various helper classes and structs for storing data into JSON, coordinate conversion, distance calculation</p>
+						<p class="">Algorithm for finding the optimal point based on "midpoint of time". In the most basic explanation, if it took 10 minutes time for point A (driver) to drive to point B (passenger), the optimal point would be 5 minutes into the route  </p>
 
-					<p>I learned a lot from building this application. Firstly, that I should always build my front end, at least a basic skeleton of it so that I know what information the user would need. That would define my goals more clearly than just playing with the backend for weeks before realizing that some information was not needed. Secondly, organizing even the most basic functions that are similar to each other into classes helps with code readability immensely. Lastly, I learned that there is a lot of data to be pulled from different companies, but only if documentation is readily available will the information be easily accessible. </p>
+					</div>
 
-					<h4><a href="https://github.com/imwillson/makeSchoolApp">imwillson/makeSchoolApp</a></h4>
+				</div>
 
-				</p>
+				<!-- What I learned -->
+				<div class="db pa2 nowrap-ns ma2 bt b--light-gray bn-ns">
+
+					<div class="db dib-ns v-mid-ns pt3 tc">
+						<img class="" src="https://img.icons8.com/ios/100/000000/classroom-filled.png">
+					</div>
+
+					<div class="dib v-mid ws-normal overflow-hidden ph3">
+						<h3>What I learned:</h3>
+						<p>Never wait till the last minute to build the front end. Building the front helps me to visualize what is necessary to accomplish for the backend. Otherwise it is hard for me to iterate versions.</p>
+						<p>JSON format, pulling data from an API and reading the documentation for it, </p>
+						<p>Whenever there is redundancy in your code or a chance to make things more legible, modularize your code! Definitely helped me understand my code better since some functions turned out really verbose and it helped me test certain parts of my program more easily.</p>
+						<p>Ask for help! In my original algorithm, I was essentially using googleMaps API to binary search the most exactly halfway time, however, this was very resource intensive. I had to learn how to do some asynchronous programming because sometimes the function would take so long to process that the UI would not load. This was very innefficent and unnecessary. So my mentor helped me by constructing a new, but similar, way to find the optimal point.
+
+
+					</div>
+
+				</div>	
+				
 			</div>
 		</div>
 
-
-		<div class="test-area"> 
-			<p id="simulationTest"> This is just a simulation </p>
-
-			<button type="button" id="test-button">Javascript Button Test!</button>
-		</div>
 
 		
 
@@ -74,3 +112,22 @@
 	</body>
 
 </html>
+
+<!-- <div class="test-area"> 
+			<p id="simulationTest"> This is just a simulation </p>
+
+			<button type="button" id="test-button">Javascript Button Test!</button>
+		</div> -->
+
+
+<!-- 
+<p>What was used? Swift. GoogleMaps Geometry Library, Google Maps API</p>
+
+<p>This was a project I made by myself at a iOS Mobile App bootcamp called Make School. In our 8 week program, we were tasked to develop an application that sought to solve problems in our personal lives. As a transit enthusiast, I’ve always been interested in how friends from outer boroughs with cars (Brooklyn, Queens, Bronx, Staten Island) could pickup their friends efficiently. I always made my friends walk toward me as I was driving toward them, so I sought to create an application that efficiently did just this. So, instead of sitting in traffic and their standing idly, they could cut down time walking toward me while I was driving toward them.</p>
+
+<p>I sought to build the backend of the project first. There were so many functions and objects for me to consider when working with the Google Maps Api, my personal algorithm, and data parsing. Quickly, I realized that I needed to build multiple classes to support this project so that my code could be readable and concise.</p>
+
+<p>It was my first time working with an API and that was challenging to work through documentation and to sort through the data afterward and put it in the JSON format that I wanted. Building the frontend of the application was very challenging as I had not thought much about the user experience when using the application while creating my sketches. </p>
+
+<p>I learned a lot from building this application. Firstly, that I should always build my front end, at least a basic skeleton of it so that I know what information the user would need. That would define my goals more clearly than just playing with the backend for weeks before realizing that some information was not needed. Secondly, organizing even the most basic functions that are similar to each other into classes helps with code readability immensely. Lastly, I learned that there is a lot of data to be pulled from different companies, but only if documentation is readily available will the information be easily accessible. </p>
+ -->
